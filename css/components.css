@@ -350,9 +350,25 @@
 /* ─── FOOTER ─────────────────────────────────────────────── */
 
 .footer {
-  background: var(--color-black-soft);
-  border-top: 1px solid var(--color-gold-border);
+  position: relative;
+  background-color: #0A0A0A;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Cpolygon points='20,2 38,20 20,38 2,20' fill='none' stroke='%23C9A84C' stroke-width='0.5' opacity='0.05'/%3E%3C/svg%3E");
+  border-top: none;
   padding: 64px 5% 32px;
+  margin-top: 0;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: -79px;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background-image: url('assets/svg/silueta-montanas.svg');
+  background-size: cover;
+  background-position: top center;
+  pointer-events: none;
 }
 
 .footer__top {

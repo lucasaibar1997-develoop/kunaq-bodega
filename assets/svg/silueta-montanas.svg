@@ -1,0 +1,11 @@
+<svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+  <!-- Capa trasera: picos altos, más oscura -->
+  <path d="M0,120 L0,80 L80,45 L160,70 L280,20 L380,55 L480,10 L560,48 L640,25 L720,60 L820,15 L900,50 L980,30 L1080,65 L1180,18 L1280,55 L1360,35 L1440,70 L1440,120 Z"
+        fill="#1A1A1A"/>
+  <!-- Capa media: picos intermedios -->
+  <path d="M0,120 L0,95 L100,65 L200,82 L320,52 L420,75 L520,42 L600,68 L700,55 L800,78 L880,48 L960,72 L1060,58 L1160,80 L1260,50 L1360,75 L1440,90 L1440,120 Z"
+        fill="#111111"/>
+  <!-- Capa frontal: picos bajos, funde con fondo negro -->
+  <path d="M0,120 L0,108 L120,88 L240,100 L360,80 L480,95 L600,78 L720,96 L840,82 L960,100 L1080,85 L1200,102 L1320,88 L1440,105 L1440,120 Z"
+        fill="#0D0D0D"/>
+</svg>

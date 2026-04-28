@@ -38,9 +38,10 @@
   font-size: 9px;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: var(--color-gold);
+  color: var(--color-ocre);
   margin-bottom: 12px;
   display: block;
+  opacity: 0.85;
 }
 
 .timeline__text h3 { font-size: 26px; margin-bottom: 16px; }
@@ -50,6 +51,13 @@
   height: 340px;
   object-fit: cover;
   border: 1px solid var(--color-gold-border);
+  border-left: 2px solid var(--color-ocre);
+}
+
+.timeline__item:nth-child(even) {
+  background: linear-gradient(90deg, rgba(139, 94, 60, 0.06) 0%, transparent 100%);
+  padding: 24px;
+  margin: -24px;
 }
 
 @media (max-width: 768px) {
