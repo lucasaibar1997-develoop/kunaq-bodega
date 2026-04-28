@@ -4,41 +4,65 @@
    ============================================================ */
 
 :root {
-  /* ── Fondos ── */
-  --color-black:          #0D0D0D;
-  --color-black-soft:     #1A1A1A;
-  --color-black-card:     #111111;
+  /* ── Fondos NOA ── */
+  --color-black:            #0D0D0D;
+  --color-black-soft:       #1E1C18;
+  --color-black-card:       #0E0C0A;
 
   /* ── Dorados ── */
-  --color-gold:           #C9A84C;
-  --color-gold-light:     #E8C97A;
-  --color-gold-dark:      #8B6914;
-  --color-gold-border:    rgba(201, 168, 76, 0.25);
+  --color-gold:             #C9A84C;
+  --color-gold-light:       #E8C97A;
+  --color-gold-dark:        #8B6914;
+  --color-gold-border:      rgba(201, 168, 76, 0.25);
 
-  /* ── Textos ── */
-  --color-cream:          #F2EDE3;
-  --color-cream-muted:    #B8A898;
-  --color-cream-subtle:   #6E6860;
+  /* ── Textos — piedra cálida ── */
+  --color-cream:            #F0EDE8;
+  --color-cream-muted:      #C0B4A0;
+  --color-cream-subtle:     #7A7268;
 
-  /* ── Acentos vino ── */
-  --color-bordo:          #5C1A2E;
+  /* ── Ramp Arcilla ── */
+  --arcilla-900:            #1C0A00;
+  --arcilla-800:            #3A1A0A;
+  --arcilla-700:            #6B3A2A;
+  --arcilla-600:            #8B5E3C;
+  --arcilla-500:            #C4703A;
+  --arcilla-400:            #D4956A;
+  --arcilla-300:            #E0B896;
+  --arcilla-200:            #F0D8C0;
+  --arcilla-100:            #FAF0E8;
 
-  /* ── Paleta NOA árida ── */
-  --color-tierra:         #8B5E3C;
-  --color-ocre:           #C4703A;
-  --color-arena:          #D4A574;
-  --color-quebrada:       #6B3A2A;
-  --color-marron:         #3A2E1C;
-  --color-cactus:         #4A5240;
-  --color-cactus-light:   #7A8C6E;
-  --color-piedra:         #B8A898;
+  /* ── Ramp Piedra ── */
+  --piedra-900:             #0E0C0A;
+  --piedra-800:             #1E1C18;
+  --piedra-700:             #3A3630;
+  --piedra-600:             #5C5850;
+  --piedra-500:             #7A7268;
+  --piedra-400:             #A89880;
+  --piedra-300:             #C0B4A0;
+  --piedra-200:             #D8D0C4;
+  --piedra-100:             #F0EDE8;
+
+  /* ── Verde cactus ── */
+  --color-cactus:           #4A5240;
+  --color-cactus-light:     #7A8C6E;
+  --color-cactus-pale:      #B2BEA8;
+
+  /* ── Aliases legacy (compat) ── */
+  --color-tierra:           #8B5E3C;
+  --color-ocre:             #C4703A;
+  --color-piedra:           #C0B4A0;
+
+  /* ── Bordo vino ── */
+  --color-bordo:            #5C1A2E;
 
   /* ── Overlays ── */
-  --color-overlay:        rgba(0, 0, 0, 0.65);
-  --color-overlay-strong: rgba(0, 0, 0, 0.80);
-  --color-overlay-tierra: rgba(139, 94, 60, 0.28);
+  --color-overlay:          rgba(14, 12, 10, 0.68);
+  --color-overlay-strong:   rgba(14, 12, 10, 0.85);
+  --color-overlay-arcilla:  rgba(107, 58, 42, 0.30);
+  --color-overlay-piedra:   rgba(58, 54, 48, 0.45);
+  --color-overlay-tierra:   rgba(107, 58, 42, 0.30);
 
-  --color-whatsapp:       #25D366;
+  --color-whatsapp:         #25D366;
 
   --font-display: 'Cormorant Garamond', Georgia, serif;
   --font-heading: 'Cinzel', serif;

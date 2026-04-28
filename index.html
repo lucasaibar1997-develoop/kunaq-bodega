@@ -61,6 +61,15 @@
        HERO
        ============================================================ -->
   <section class="hero" aria-label="Hero principal">
+    <!-- Canvas pájaros -->
+    <canvas id="canvas-pajaros"
+      style="position:absolute;inset:0;z-index:3;pointer-events:none;" aria-hidden="true"></canvas>
+    <!-- Montañas parallax -->
+    <div class="hero__montanas" aria-hidden="true">
+      <div class="montana-layer" data-parallax="0.05">
+        <img src="assets/svg/montanas.svg" alt="">
+      </div>
+    </div>
     <div class="hero__content">
       <img src="assets/logo/logo-kunaq-blanco.svg" alt="Kunaq" class="hero__logo">
       <h1 class="hero__title">
@@ -222,7 +231,11 @@
   </section>
 
   <!-- Separador cactus NOA -->
-  <div class="separador-cactus" aria-hidden="true"></div>
+  <div class="separador-cactus" aria-hidden="true">
+    <img src="assets/svg/cactus-escena.svg" alt="" class="cactus-banner">
+    <canvas id="canvas-polvo"
+      style="position:absolute;bottom:0;left:0;width:100%;pointer-events:none;" aria-hidden="true"></canvas>
+  </div>
 
   <!-- ============================================================
        GALERÍA PREVIEW
@@ -272,6 +285,11 @@
       </form>
     </div>
   </section>
+
+  <!-- Escena cactus footer -->
+  <div class="footer__cactus" aria-hidden="true">
+    <img src="assets/svg/cactus-footer.svg" alt="">
+  </div>
 
   <!-- ============================================================
        FOOTER
@@ -327,5 +345,6 @@
   </a>
 
   <script src="js/main.js"></script>
+  <script src="js/animaciones.js"></script>
 </body>
 </html>
