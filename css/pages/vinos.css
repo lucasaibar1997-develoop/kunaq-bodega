@@ -1,0 +1,154 @@
+/* ============================================================
+   KUNAQ · vinos.css
+   ============================================================ */
+
+/* ─── HERO VINOS ─────────────────────────────────────────── */
+
+.vinos-hero {
+  min-height: 70vh;
+  background: var(--color-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 140px 5% 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.vinos-hero::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201, 168, 76, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.vinos-hero__bottle {
+  height: 380px;
+  width: auto;
+  margin: 0 auto 48px;
+  filter: drop-shadow(0 0 60px rgba(201, 168, 76, 0.3));
+  position: relative;
+  z-index: 1;
+}
+
+.vinos-hero h2 {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .vinos-hero__bottle { height: 260px; }
+}
+
+/* ─── FICHA DEL VINO ─────────────────────────────────────── */
+
+.vino-ficha {
+  padding: var(--section-padding);
+  background: var(--color-black-soft);
+}
+
+.vino-ficha__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.vino-ficha__img {
+  position: relative;
+}
+
+.vino-ficha__img img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid var(--color-gold-border);
+  display: block;
+}
+
+.vino-ficha__img::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  right: 12px;
+  bottom: 12px;
+  border: 1px solid var(--color-gold-border);
+  pointer-events: none;
+}
+
+.vino-ficha__details h3 { margin-bottom: 32px; }
+
+.vino-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+}
+
+.vino-table tr { border-bottom: 1px solid var(--color-gold-border); }
+.vino-table tr:first-child { border-top: 1px solid var(--color-gold-border); }
+
+.vino-table td {
+  padding: 14px 0;
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--color-cream-muted);
+  vertical-align: top;
+  line-height: 1.6;
+}
+
+.vino-table td:first-child {
+  font-family: var(--font-heading);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  width: 38%;
+  padding-right: 20px;
+  padding-top: 16px;
+}
+
+.vino-ficha__cta { display: flex; gap: 16px; flex-wrap: wrap; }
+
+@media (max-width: 900px) {
+  .vino-ficha__grid { grid-template-columns: 1fr; gap: 48px; }
+  .vino-ficha__img img { height: 320px; }
+  .vino-ficha__cta { justify-content: center; }
+}
+
+/* ─── CÓMO COMPRARLO ─────────────────────────────────────── */
+
+.como-comprar {
+  padding: var(--section-padding);
+  background: var(--color-black);
+  text-align: center;
+}
+
+.como-comprar h2 { margin-bottom: 56px; }
+
+.como-comprar__steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto 48px;
+}
+
+.comprar-step__icon { font-size: 36px; margin-bottom: 20px; display: block; }
+.comprar-step h3    { font-size: 20px; margin-bottom: 12px; }
+
+@media (max-width: 768px) {
+  .como-comprar__steps { grid-template-columns: 1fr; max-width: 400px; }
+}

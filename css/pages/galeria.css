@@ -1,0 +1,89 @@
+/* ============================================================
+   KUNAQ · galeria.css
+   ============================================================ */
+
+.galeria-page {
+  padding: 140px 5% 80px;
+  background: var(--color-black);
+  min-height: 100vh;
+}
+
+.galeria-page__header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.galeria-page__header h1 {
+  font-family: var(--font-heading);
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(32px, 5vw, 52px);
+  color: var(--color-gold);
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+}
+
+/* ─── MASONRY GRID ───────────────────────────────────────── */
+
+.gallery {
+  columns: 3;
+  column-gap: 12px;
+  max-width: 1200px;
+  margin: 0 auto 48px;
+}
+
+.gallery__item {
+  break-inside: avoid;
+  margin-bottom: 12px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.gallery__item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.gallery__item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(201, 168, 76, 0);
+  transition: background var(--transition-base);
+}
+
+.gallery__item:hover img { transform: scale(1.03); }
+.gallery__item:hover::after { background: rgba(201, 168, 76, 0.12); }
+
+@media (max-width: 900px) { .gallery { columns: 2; } }
+@media (max-width: 600px) { .gallery { columns: 1; } }
+
+/* ─── FACEBOOK LINK ──────────────────────────────────────── */
+
+.galeria-facebook {
+  text-align: center;
+  padding: 48px 0;
+  border-top: 1px solid var(--color-gold-border);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.galeria-facebook p { margin-bottom: 20px; }
+
+.galeria-facebook__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-heading);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  transition: all var(--transition-base);
+}
+
+.galeria-facebook__link i { font-size: 20px; }
+.galeria-facebook__link:hover { color: var(--color-gold-light); gap: 16px; }

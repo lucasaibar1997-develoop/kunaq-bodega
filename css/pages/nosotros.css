@@ -1,0 +1,129 @@
+/* ============================================================
+   KUNAQ · nosotros.css
+   ============================================================ */
+
+/* ─── HISTORIA ───────────────────────────────────────────── */
+
+.nosotros-historia {
+  padding: var(--section-padding);
+  background: var(--color-black);
+}
+
+.nosotros-historia__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.nosotros-historia__text h2 { margin-bottom: 28px; }
+.nosotros-historia__text p  { margin-bottom: 20px; }
+
+.nosotros-historia__img img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  border: 1px solid var(--color-gold-border);
+}
+
+@media (max-width: 900px) {
+  .nosotros-historia__grid { grid-template-columns: 1fr; gap: 48px; }
+  .nosotros-historia__img img { height: 320px; }
+}
+
+/* ─── CARDS DE BODEGA ────────────────────────────────────── */
+
+.bodega-cards {
+  padding: var(--section-padding);
+  background: var(--color-black-soft);
+}
+
+.bodega-cards__header { text-align: center; margin-bottom: 56px; }
+
+.bodega-cards__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.bodega-card {
+  background: var(--color-black-card);
+  border: 1px solid var(--color-gold-border);
+  padding: 36px 24px;
+  text-align: center;
+  transition: border-color var(--transition-base), transform var(--transition-base);
+}
+
+.bodega-card:hover {
+  border-color: var(--color-gold);
+  transform: translateY(-4px);
+}
+
+.bodega-card__icon { font-size: 28px; margin-bottom: 16px; display: block; }
+
+.bodega-card__label {
+  font-family: var(--font-heading);
+  font-size: 9px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: 8px;
+  display: block;
+}
+
+.bodega-card__value {
+  font-family: var(--font-display);
+  font-size: 18px;
+  color: var(--color-cream);
+  line-height: 1.4;
+}
+
+@media (max-width: 900px) { .bodega-cards__grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .bodega-cards__grid { grid-template-columns: 1fr; } }
+
+/* ─── EL VALLE ───────────────────────────────────────────── */
+
+.valle-section {
+  position: relative;
+  padding: 120px 5%;
+  background-image: url('../../assets/images/terroir-valles.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.valle-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.80);
+}
+
+.valle-section__content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.valle-section h2 { margin-bottom: 24px; }
+.valle-section p  { margin-bottom: 40px; }
+
+@media (max-width: 768px) {
+  .valle-section { background-attachment: scroll; padding: 80px 5%; }
+}
+
+/* ─── CTA NOSOTROS ───────────────────────────────────────── */
+
+.nosotros-cta {
+  padding: var(--section-padding);
+  background: var(--color-black);
+  text-align: center;
+}
+
+.nosotros-cta h2 { margin-bottom: 32px; }

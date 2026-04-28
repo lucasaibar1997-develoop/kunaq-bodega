@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinos — Bodega Artesanal Kunaq</title>
+  <meta name="description" content="Bodega Artesanal Kunaq elabora Malbec artesanal en los Valles de Hualfín, Catamarca. Vino de altura, hecho con pasión familiar desde 2016.">
+  <meta property="og:title" content="Vinos — Bodega Artesanal Kunaq">
+  <meta property="og:description" content="Malbec artesanal de los Valles de Hualfín, Catamarca.">
+  <meta property="og:image" content="assets/images/og-preview.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="assets/logo/logo-kunaq.svg">
+  <link rel="apple-touch-icon" href="assets/logo/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/vinos.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" role="navigation" aria-label="Menú principal">
+    <a href="index.html" aria-label="Inicio Kunaq">
+      <img src="assets/logo/logo-kunaq.svg" alt="Kunaq Bodega Artesanal" class="nav-logo">
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="vinos.html">Vinos</a></li>
+      <li><a href="proceso.html">Proceso</a></li>
+      <li><a href="galeria.html">Galería</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO VINOS -->
+  <header class="hero-inner" style="min-height: 70vh; background-image: url('assets/images/botellas-kunaq.jpg'); background-position: center center;" aria-label="Vinos Kunaq">
+    <div class="hero-inner__content">
+      <h2 class="hero-inner__title">Kunaq Malbec Artesanal</h2>
+      <p class="hero-inner__subtitle">Valles de Hualfín · Catamarca · INV Nº SEA-028</p>
+    </div>
+  </header>
+
+  <!-- FICHA DEL VINO -->
+  <section class="vino-ficha" aria-labelledby="ficha-title">
+    <div class="vino-ficha__grid">
+      <div class="vino-ficha__img">
+        <img
+          src="assets/images/galeria-02.jpg"
+          alt="Uvas Malbec de Bodega Kunaq — cosecha artesanal en los Valles de Hualfín"
+          loading="lazy">
+      </div>
+      <div class="vino-ficha__details">
+        <span class="section-subtitle">Ficha técnica</span>
+        <h3 id="ficha-title">Kunaq · Malbec Artesanal</h3>
+        <table class="vino-table" aria-label="Características del vino">
+          <tbody>
+            <tr>
+              <td>Varietal</td>
+              <td>Malbec 100%</td>
+            </tr>
+            <tr>
+              <td>Origen</td>
+              <td>Valles de Hualfín, Catamarca</td>
+            </tr>
+            <tr>
+              <td>Altura</td>
+              <td>+1.500 msnm</td>
+            </tr>
+            <tr>
+              <td>Proceso</td>
+              <td>Artesanal, embotellado en origen</td>
+            </tr>
+            <tr>
+              <td>Registro</td>
+              <td>INV Nº SEA-028</td>
+            </tr>
+            <tr>
+              <td>Nota de cata</td>
+              <td>Vino de cuerpo medio, con aromas frutales a ciruela y especias, final persistente y elegante.</td>
+            </tr>
+            <tr>
+              <td>Maridaje</td>
+              <td>Carnes rojas, pastas con salsas, quesos curados.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="vino-ficha__cta">
+          <a href="https://wa.me/549XXXXXXXXXX?text=Hola!%20Quisiera%20pedir%20una%20botella%20de%20Kunaq%20Malbec%20%F0%9F%8D%B7"
+             class="btn btn--whatsapp" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i> Pedí tu botella
+          </a>
+          <a href="https://wa.me/549XXXXXXXXXX?text=Hola!%20Quisiera%20consultar%20disponibilidad%20de%20Kunaq%20%F0%9F%8D%B7"
+             class="btn btn--outline-gold" target="_blank" rel="noopener noreferrer">
+            Consultá disponibilidad
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CÓMO COMPRARLO -->
+  <section class="como-comprar" aria-labelledby="comprar-title">
+    <span class="section-subtitle">Simple y directo</span>
+    <h2 id="comprar-title">¿Cómo comprarlo?</h2>
+    <div class="como-comprar__steps">
+      <article class="comprar-step">
+        <span class="comprar-step__icon" aria-hidden="true">1️⃣</span>
+        <h3>Escribinos por WhatsApp</h3>
+        <p>Contactanos directo por WhatsApp. Respondemos todos los días con toda la info que necesitás.</p>
+      </article>
+      <article class="comprar-step">
+        <span class="comprar-step__icon" aria-hidden="true">2️⃣</span>
+        <h3>Acordamos cantidad y entrega</h3>
+        <p>Te contamos las opciones disponibles, cantidades y coordinamos la entrega según tu zona.</p>
+      </article>
+      <article class="comprar-step">
+        <span class="comprar-step__icon" aria-hidden="true">3️⃣</span>
+        <h3>Recibís tu vino</h3>
+        <p>Tu Kunaq Malbec Artesanal llega directo desde los Valles de Hualfín hasta tu mesa.</p>
+      </article>
+    </div>
+    <a href="https://wa.me/549XXXXXXXXXX?text=Hola!%20Me%20interesa%20conocer%20m%C3%A1s%20sobre%20los%20vinos%20Kunaq%20%F0%9F%8D%B7"
+       class="btn btn--whatsapp btn--lg" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-whatsapp"></i> Empezar ahora
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="assets/logo/logo-kunaq.svg" alt="Kunaq" class="footer__logo">
+        <p>Bodega artesanal familiar en los Valles de Hualfín, Catamarca, Argentina. Malbec 100% artesanal desde 2016.</p>
+      </div>
+      <div class="footer__nav">
+        <p class="footer__nav-title">Navegación</p>
+        <ul class="footer__nav-links">
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="vinos.html">Vinos</a></li>
+          <li><a href="proceso.html">Proceso</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer__social">
+        <p class="footer__social-title">Seguinos</p>
+        <div class="footer__social-icons">
+          <a href="https://www.facebook.com/bodegakunaq" target="_blank" rel="noopener noreferrer" aria-label="Facebook Kunaq"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/bodegakunaq" target="_blank" rel="noopener noreferrer" aria-label="Instagram Kunaq"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/549XXXXXXXXXX" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Kunaq"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <form class="lead-form" action="https://formspree.io/f/XXXXXXXX" method="POST">
+          <input type="email" name="email" placeholder="Tu email" required aria-label="Email newsletter">
+          <button type="submit">OK</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__legal">
+        Beber con moderación. Prohibida su venta a menores de 18 años.<br>
+        INV Nº SEA-028 · Bodega Artesanal Kunaq · Valles de Hualfín, Catamarca, Argentina.
+      </p>
+      <p class="footer__copy">Copyright &copy; 2025 Bodega Artesanal Kunaq</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flotante -->
+  <a href="https://wa.me/549XXXXXXXXXX?text=Hola!%20Me%20interesa%20conocer%20m%C3%A1s%20sobre%20los%20vinos%20Kunaq%20%F0%9F%8D%B7"
+     class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
